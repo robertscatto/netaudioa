@@ -1,0 +1,23 @@
+NETAUDIO STREAM - CLIENTE ANDROID
+=================================
+Toca no celular o áudio enviado pelo servidor do NetAudio Stream (Windows).
+Requer Android 8.0 ou superior. Celular e PC devem estar na mesma rede Wi-Fi.
+
+GERAR O APK (sem instalar nada no PC) - GitHub
+1. Crie uma conta gratuita em github.com e um repositório novo (New repository).
+2. Em "uploading an existing file", arraste TODO o conteúdo desta pasta
+   (incluindo a pasta oculta .github). Se a .github não subir, use
+   Add file > Create new file, digite o nome  .github/workflows/build-apk.yml
+   e cole o conteúdo do arquivo de mesmo nome. Clique em Commit.
+3. Abra a aba Actions > "Build APK". Aguarde ~3-5 min (ícone verde).
+   Se não iniciar sozinho: Run workflow.
+4. Clique na execução concluída > Artifacts > NetAudio-apk (baixa um .zip).
+5. Extraia o .zip no celular/PC: dentro está o app-debug.apk.
+
+INSTALAR
+- Copie o APK para o celular, toque nele e permita "instalar apps desconhecidos".
+
+USAR
+1. No PC: abra o NetAudio Stream > aba Servidor > Iniciar servidor (anote o IP).
+2. No celular: abra NetAudio, digite o IP, toque em Conectar.
+3. Se houver cortes, aumente o Buffer (10 a 20). Prefira Wi-Fi 5 GHz.
